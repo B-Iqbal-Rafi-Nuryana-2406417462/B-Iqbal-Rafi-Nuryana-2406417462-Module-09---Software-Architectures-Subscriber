@@ -15,3 +15,6 @@ localhost: Ini adalah alamat tempat "kantor pos"-nya berada. Artinya, server Rab
 
 ![Simulation slow subscriber](image.png)
 Ini terjadi karena publisher mengirim pesan jauh lebih cepat (tanpa delay) daripada kemampuan subscriber memprosesnya (ada delay 1 detik). Akhirnya, pesan-pesan tersebut menumpuk dan ngantri di dalam RabbitMQ message broker
+
+![Running at least three subscribers](image-1.png)
+RabbitMQ membagi-bagikan pesan ke ketiga subscriber tersebut secara bergantian (Round-Robin). Karena pekerjanya sekarang ada tiga, beban kerjanya terbagi rata dan antrean pesan di RabbitMQ bisa diproses tiga kali lipat lebih cepat
