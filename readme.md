@@ -14,3 +14,4 @@ localhost: Ini adalah alamat tempat "kantor pos"-nya berada. Artinya, server Rab
 5672: Ini adalah Port atau ibarat "nomor jalur pintu masuk". Komputer itu punya ribuan "pintu" untuk berbagai aplikasi, dan 5672 adalah pintu masuk standar yang khusus dipakai oleh RabbitMQ untuk mendengarkan komunikasi AMQP.
 
 ![Simulation slow subscriber](image.png)
+Ini terjadi karena publisher mengirim pesan jauh lebih cepat (tanpa delay) daripada kemampuan subscriber memprosesnya (ada delay 1 detik). Akhirnya, pesan-pesan tersebut menumpuk dan ngantri di dalam RabbitMQ message broker
