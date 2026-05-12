@@ -12,3 +12,5 @@ guest yang kedua (setelah titik dua): Ini adalah Password (kata sandi) bawaan ya
 localhost: Ini adalah alamat tempat "kantor pos"-nya berada. Artinya, server RabbitMQ tersebut sedang berjalan di komputermu sendiri, bukan di komputer atau server orang lain di internet.
 
 5672: Ini adalah Port atau ibarat "nomor jalur pintu masuk". Komputer itu punya ribuan "pintu" untuk berbagai aplikasi, dan 5672 adalah pintu masuk standar yang khusus dipakai oleh RabbitMQ untuk mendengarkan komunikasi AMQP.
+
+![Simulation slow subscriber](image.png)
